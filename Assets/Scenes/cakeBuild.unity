@@ -290,8 +290,8 @@ RectTransform:
   - {fileID: 394456307}
   - {fileID: 1916598291}
   - {fileID: 1899747292}
-  - {fileID: 132621850}
   - {fileID: 396641049}
+  - {fileID: 132621850}
   - {fileID: 859398784}
   - {fileID: 1383888866}
   - {fileID: 1692140883}
@@ -318,7 +318,7 @@ GameObject:
   - component: {fileID: 48023627}
   - component: {fileID: 48023628}
   m_Layer: 5
-  m_Name: Toggle (4)
+  m_Name: red velvet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -387,7 +387,18 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 285136225}
+        m_MethodName: disbleOthersFlavorR
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
@@ -557,8 +568,9 @@ GameObject:
   m_Component:
   - component: {fileID: 128127062}
   - component: {fileID: 128127063}
+  - component: {fileID: 128127064}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -627,10 +639,33 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 285136225}
+        m_MethodName: disbleOthersLayer1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
+--- !u!114 &128127064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128127061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c642c55524b6f74288a4eba9f94d9f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &132621849
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,7 +677,7 @@ GameObject:
   - component: {fileID: 132621850}
   - component: {fileID: 132621851}
   m_Layer: 5
-  m_Name: Toggle (12)
+  m_Name: medium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -662,7 +697,7 @@ RectTransform:
   - {fileID: 2074620049}
   - {fileID: 1400692030}
   m_Father: {fileID: 22491319}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1024,7 +1059,7 @@ GameObject:
   - component: {fileID: 230279157}
   - component: {fileID: 230279158}
   m_Layer: 5
-  m_Name: Toggle (21)
+  m_Name: sprinkles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1189,6 +1224,7 @@ GameObject:
   - component: {fileID: 285136224}
   - component: {fileID: 285136223}
   - component: {fileID: 285136222}
+  - component: {fileID: 285136225}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1260,6 +1296,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &285136225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285136221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42691a3aa87e4e648befbeee312dee4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  t1: {fileID: 128127063}
+  t2: {fileID: 1459170495}
+  t3: {fileID: 1814329222}
+  vanilla: {fileID: 484554332}
+  chocolate: {fileID: 1426283307}
+  redVelvet: {fileID: 48023628}
+  red: {fileID: 1916598292}
+  blue: {fileID: 394456308}
+  green: {fileID: 534238116}
+  purple: {fileID: 497661286}
+  white: {fileID: 1864414935}
+  small: {fileID: 396641050}
+  medium: {fileID: 132621851}
+  large: {fileID: 1899747293}
+  circle: {fileID: 1978949600}
+  rect: {fileID: 1692140884}
+  star: {fileID: 1383888867}
 --- !u!1 &390650992
 GameObject:
   m_ObjectHideFlags: 0
@@ -1346,7 +1411,7 @@ GameObject:
   - component: {fileID: 394456307}
   - component: {fileID: 394456308}
   m_Layer: 5
-  m_Name: Toggle (9)
+  m_Name: blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1430,7 +1495,7 @@ GameObject:
   - component: {fileID: 396641049}
   - component: {fileID: 396641050}
   m_Layer: 5
-  m_Name: Toggle (13)
+  m_Name: small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1450,7 +1515,7 @@ RectTransform:
   - {fileID: 2048404648}
   - {fileID: 1759985903}
   m_Father: {fileID: 22491319}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1588,7 +1653,7 @@ GameObject:
   - component: {fileID: 484554331}
   - component: {fileID: 484554332}
   m_Layer: 5
-  m_Name: Toggle (1)
+  m_Name: Vanilla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1657,7 +1722,18 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 285136225}
+        m_MethodName: disbleOthersFlavorV
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
@@ -1672,7 +1748,7 @@ GameObject:
   - component: {fileID: 494986250}
   - component: {fileID: 494986251}
   m_Layer: 5
-  m_Name: Toggle (16)
+  m_Name: deco icing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1756,7 +1832,7 @@ GameObject:
   - component: {fileID: 497661285}
   - component: {fileID: 497661286}
   m_Layer: 5
-  m_Name: Toggle (7)
+  m_Name: purple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1825,7 +1901,18 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 285136225}
+        m_MethodName: disbleOthersColorP
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
@@ -1919,7 +2006,7 @@ GameObject:
   - component: {fileID: 534238115}
   - component: {fileID: 534238116}
   m_Layer: 5
-  m_Name: Toggle (8)
+  m_Name: green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1988,7 +2075,18 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 285136225}
+        m_MethodName: disbleOthersColorG
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
@@ -2387,7 +2485,7 @@ GameObject:
   - component: {fileID: 859398784}
   - component: {fileID: 859398785}
   m_Layer: 5
-  m_Name: Toggle (15)
+  m_Name: writing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2639,8 +2737,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896008634}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.2, y: -3.8, z: 0}
-  m_LocalScale: {x: 155.5351, y: 104.51664, z: 1}
+  m_LocalPosition: {x: 0, y: -6, z: 0}
+  m_LocalScale: {x: 73.91028, y: 59.26093, z: 1}
   m_Children: []
   m_Father: {fileID: 22491319}
   m_RootOrder: 0
@@ -4008,7 +4106,7 @@ GameObject:
   - component: {fileID: 1383888866}
   - component: {fileID: 1383888867}
   m_Layer: 5
-  m_Name: Toggle (18)
+  m_Name: star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4171,7 +4269,7 @@ GameObject:
   - component: {fileID: 1426283306}
   - component: {fileID: 1426283307}
   m_Layer: 5
-  m_Name: Toggle (5)
+  m_Name: chocolate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4240,7 +4338,18 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 285136225}
+        m_MethodName: disbleOthersFlavorC
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
@@ -4255,7 +4364,7 @@ GameObject:
   - component: {fileID: 1459170494}
   - component: {fileID: 1459170495}
   m_Layer: 5
-  m_Name: Toggle (3)
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4324,7 +4433,18 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 285136225}
+        m_MethodName: disbleOthersLayer2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
@@ -4862,7 +4982,7 @@ GameObject:
   - component: {fileID: 1692140883}
   - component: {fileID: 1692140884}
   m_Layer: 5
-  m_Name: Toggle (19)
+  m_Name: rectangular
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4946,7 +5066,7 @@ GameObject:
   - component: {fileID: 1704622840}
   - component: {fileID: 1704622841}
   m_Layer: 5
-  m_Name: Toggle (17)
+  m_Name: candles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5498,7 +5618,7 @@ GameObject:
   - component: {fileID: 1814329221}
   - component: {fileID: 1814329222}
   m_Layer: 5
-  m_Name: Toggle (2)
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5567,7 +5687,18 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 285136225}
+        m_MethodName: disbleOthersLayer3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
@@ -5736,7 +5867,7 @@ GameObject:
   - component: {fileID: 1864414934}
   - component: {fileID: 1864414935}
   m_Layer: 5
-  m_Name: Toggle (6)
+  m_Name: white
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5805,7 +5936,18 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 285136225}
+        m_MethodName: disbleOthersColorW
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
@@ -5901,7 +6043,7 @@ GameObject:
   - component: {fileID: 1899747292}
   - component: {fileID: 1899747293}
   m_Layer: 5
-  m_Name: Toggle (11)
+  m_Name: large
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6059,7 +6201,7 @@ GameObject:
   - component: {fileID: 1916598291}
   - component: {fileID: 1916598292}
   m_Layer: 5
-  m_Name: Toggle (10)
+  m_Name: red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6446,7 +6588,7 @@ GameObject:
   - component: {fileID: 1978949599}
   - component: {fileID: 1978949600}
   m_Layer: 5
-  m_Name: Toggle (20)
+  m_Name: circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
