@@ -16,7 +16,7 @@ public class clickButton : MonoBehaviour
         text.text = word;
     }
 
-    public void OnMouseUp()
+    public void changeLevel()
     {
         Application.LoadLevel("SampleScene");
     }
