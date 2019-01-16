@@ -20,7 +20,10 @@ public class clickButton : MonoBehaviour
     {
         Application.LoadLevel("SampleScene");
     }
-
+    public void changeToEnd()
+    {
+        Application.LoadLevel("EndScreen");
+    }
     public void makeUnclickable(Button but)
     {
         but.interactable = false;
