@@ -14,6 +14,7 @@ public class onmenuselsct : MonoBehaviour
 
     public Text text = null;
 
+
     public void printAnswers(Dropdown question)
     {
         int val = question.value;
