@@ -12,7 +12,7 @@ public class clickButton : MonoBehaviour
     public Button fix;
     public Toggle t1, t2, t3, vanilla, chocolate, redVelvet, red, blue, green, purple, white, small, medium, large, circle, rect, star, icing
         , writing, sprinkles, candles;
-    public static int correct = 0;
+    public static int ans = 0;
 
     public void changeText(string word)
     {
@@ -27,37 +27,42 @@ public class clickButton : MonoBehaviour
     {
         if(t3.isOn == false)
         {
-            correct += 1;
+            ans += 1;
         }
         if (vanilla.isOn == false)
         {
-            correct += 1;
+            ans += 1;
         }
         if (blue.isOn == false)
         {
-            correct += 1;
+            ans += 1;
         }
         if (medium.isOn == false)
         {
-            correct += 1;
+            ans += 1;
         }
         if (icing.isOn == false)
         {
-            correct += 1;
+            ans += 1;
         }
         if (writing.isOn == false)
         {
-            correct += 1;
+            ans += 1;
         }
         if (candles.isOn == false)
         {
-            correct += 1;
+            ans += 1;
         }
         if (rect.isOn == false)
         {
-            correct += 1;
+            ans += 1;
         }
         Application.LoadLevel("EndScreen");
+    }
+
+    public void reset()
+    {
+        Application.LoadLevel("StartScreen");
     }
     public void makeUnclickable(Button but)
     {
