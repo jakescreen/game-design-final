@@ -427,9 +427,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c597f4e2ff7da954b8a3520192df7723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  i: 0
   text: {fileID: 1645677253}
   ruin: {fileID: 0}
   fix: {fileID: 0}
+  t1: {fileID: 0}
+  t2: {fileID: 0}
+  t3: {fileID: 0}
+  vanilla: {fileID: 0}
+  chocolate: {fileID: 0}
+  redVelvet: {fileID: 0}
+  red: {fileID: 0}
+  blue: {fileID: 0}
+  green: {fileID: 0}
+  purple: {fileID: 0}
+  white: {fileID: 0}
+  small: {fileID: 0}
+  medium: {fileID: 0}
+  large: {fileID: 0}
+  circle: {fileID: 0}
+  rect: {fileID: 0}
+  star: {fileID: 0}
+  icing: {fileID: 0}
+  writing: {fileID: 0}
+  sprinkles: {fileID: 0}
+  candles: {fileID: 0}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -755,8 +777,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21.4, y: 171.4}
-  m_SizeDelta: {x: 807.3, y: 61.1}
+  m_AnchoredPosition: {x: -7.175, y: 300.6}
+  m_SizeDelta: {x: 1554.6, y: 61.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &857737373
 MonoBehaviour:
@@ -1490,7 +1512,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Good morning! I'd like to order a cake.
+  m_Text: Good morning! I'd like to order a cake. Please ask questions from the dropdown
+    menu
 --- !u!222 &1645677254
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1515,8 +1538,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 16.7, y: 171.4}
-  m_SizeDelta: {x: 768.1, y: 32}
+  m_AnchoredPosition: {x: -7.1751, y: 300.6}
+  m_SizeDelta: {x: 1554.6, y: 61.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1676530098
 GameObject:
@@ -1776,8 +1799,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 943, y: 404}
+  m_AnchoredPosition: {x: -7.2, y: -34.5}
+  m_SizeDelta: {x: 1554.7, y: 731.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2128003371
 MonoBehaviour:
