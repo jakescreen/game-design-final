@@ -22,7 +22,7 @@ public class maxQuestions : MonoBehaviour
     {
         int num = drop.options.Count;
 
-        if(num == 6)
+        if(num == 5)
         {
             Application.LoadLevel("cakeBuild");
         }
