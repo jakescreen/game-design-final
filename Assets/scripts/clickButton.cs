@@ -13,6 +13,7 @@ public class clickButton : MonoBehaviour
     public Toggle t1, t2, t3, vanilla, chocolate, redVelvet, red, blue, green, purple, white, small, medium, large, circle, rect, star, icing
         , writing, sprinkles, candles;
     public static int ans = 0;
+    public static bool layersCorrect, flavorCorrect, icingCorrect, sizeCorrect, decorCorrect1, decorCorrect2, decorCorrect3, decorCorrect4, shapeCorrect;
 
     public void changeText(string word)
     {
@@ -67,4 +68,5 @@ public class clickButton : MonoBehaviour
     {
         but.interactable = false;
     }
+    
 }
