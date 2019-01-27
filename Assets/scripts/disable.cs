@@ -9,98 +9,244 @@ public class disable : MonoBehaviour
 
     public void disbleOthersLayer1()
     {
-        t3.interactable = false;
-        t2.interactable = false;
+        if (t1.isOn)
+        {
+            t3.interactable = false;
+            t2.interactable = false;
+        }
+        else
+        {
+            t3.interactable = true;
+            t2.interactable = true;
+        }
     }
     public void disbleOthersLayer2()
     {
-        t1.interactable = false;
-        t3.interactable = false;
+        if (t2.isOn)
+        {
+            t3.interactable = false;
+            t1.interactable = false;
+        }
+        else
+        {
+            t3.interactable = true;
+            t1.interactable = true;
+        }
     }
     public void disbleOthersLayer3()
     {
-        t1.interactable = false;
-        t2.interactable = false;
+        if (t3.isOn)
+        {
+            t2.interactable = false;
+            t1.interactable = false;
+        }
+        else
+        {
+            t2.interactable = true;
+            t1.interactable = true;
+        }
     }
     public void disbleOthersFlavorV()
     {
-        chocolate.interactable = false;
-        redVelvet.interactable = false;
+        if (vanilla.isOn)
+        {
+            redVelvet.interactable = false;
+            chocolate.interactable = false;
+        }
+        else
+        {
+            redVelvet.interactable = true;
+            chocolate.interactable = true;
+        }
     }
     public void disbleOthersFlavorC()
     {
-        vanilla.interactable = false;
-        redVelvet.interactable = false;
+        if (chocolate.isOn)
+        {
+            redVelvet.interactable = false;
+            vanilla.interactable = false;
+        }
+        else
+        {
+            redVelvet.interactable = true;
+            vanilla.interactable = true;
+        }
     }
     public void disbleOthersFlavorR()
     {
-        chocolate.interactable = false;
-        vanilla.interactable = false;
+        if (redVelvet.isOn)
+        {
+            chocolate.interactable = false;
+            vanilla.interactable = false;
+        }
+        else
+        {
+            chocolate.interactable = true;
+            vanilla.interactable = true;
+        }
     }
     public void disbleOthersColorR()
     {
-        blue.interactable = false;
-        green.interactable = false;
-        purple.interactable = false;
-        white.interactable = false;
+        if (red.isOn)
+        {
+            blue.interactable = false;
+            white.interactable = false;
+            green.interactable = false;
+            purple.interactable = false;
+        }
+        else
+        {
+            blue.interactable = true;
+            white.interactable = true;
+            green.interactable = true;
+            purple.interactable = true;
+        }
     }
     public void disbleOthersColorB()
     {
-        red.interactable = false;
-        green.interactable = false;
-        purple.interactable = false;
-        white.interactable = false;
+        if (blue.isOn)
+        {
+            red.interactable = false;
+            white.interactable = false;
+            green.interactable = false;
+            purple.interactable = false;
+        }
+        else
+        {
+            red.interactable = true;
+            white.interactable = true;
+            green.interactable = true;
+            purple.interactable = true;
+        }
     }
     public void disbleOthersColorG()
     {
-        blue.interactable = false;
-        red.interactable = false;
-        purple.interactable = false;
-        white.interactable = false;
+        if (green.isOn)
+        {
+            blue.interactable = false;
+            white.interactable = false;
+            red.interactable = false;
+            purple.interactable = false;
+        }
+        else
+        {
+            blue.interactable = true;
+            white.interactable = true;
+            red.interactable = true;
+            purple.interactable = true;
+        }
     }
     public void disbleOthersColorP()
     {
-        blue.interactable = false;
-        green.interactable = false;
-        red.interactable = false;
-        white.interactable = false;
+        if (purple.isOn)
+        {
+            blue.interactable = false;
+            white.interactable = false;
+            green.interactable = false;
+            red.interactable = false;
+        }
+        else
+        {
+            blue.interactable = true;
+            white.interactable = true;
+            green.interactable = true;
+            red.interactable = true;
+        }
     }
     public void disbleOthersColorW()
     {
-        blue.interactable = false;
-        green.interactable = false;
-        purple.interactable = false;
-        red.interactable = false;
+        if (white.isOn)
+        {
+            blue.interactable = false;
+            red.interactable = false;
+            green.interactable = false;
+            purple.interactable = false;
+        }
+        else
+        {
+            blue.interactable = true;
+            red.interactable = true;
+            green.interactable = true;
+            purple.interactable = true;
+        }
     }
     public void disbleOthersSizeS()
     {
-        medium.interactable = false;
-        large.interactable = false;
+        if (small.isOn)
+        {
+            large.interactable = false;
+            medium.interactable = false;
+        }
+        else
+        {
+            large.interactable = true;
+            medium.interactable = true;
+        }
     }
     public void disbleOthersSizeM()
     {
-        small.interactable = false;
-        large.interactable = false;
+        if (medium.isOn)
+        {
+            large.interactable = false;
+            small.interactable = false;
+        }
+        else
+        {
+            large.interactable = true;
+            small.interactable = true;
+        }
     }
     public void disbleOthersSizeL()
     {
-        medium.interactable = false;
-        small.interactable = false;
+        if (large.isOn)
+        {
+            small.interactable = false;
+            medium.interactable = false;
+        }
+        else
+        {
+            small.interactable = true;
+            medium.interactable = true;
+        }
     }
     public void disbleOthersShapeC()
     {
-        rect.interactable = false;
-        star.interactable = false;
+        if (circle.isOn)
+        {
+            rect.interactable = false;
+            star.interactable = false;
+        }
+        else
+        {
+            rect.interactable = true;
+            star.interactable = true;
+        }
     }
     public void disbleOthersShapeR()
     {
-        circle.interactable = false;
-        star.interactable = false;
+        if (rect.isOn)
+        {
+            circle.interactable = false;
+            star.interactable = false;
+        }
+        else
+        {
+            circle.interactable = true;
+            star.interactable = true;
+        }
     }
     public void disbleOthersShapeS()
     {
-        rect.interactable = false;
-        circle.interactable = false;
+        if (star.isOn)
+        {
+            rect.interactable = false;
+            circle.interactable = false;
+        }
+        else
+        {
+            rect.interactable = true;
+            circle.interactable = true;
+        }
     }
 
 
