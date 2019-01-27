@@ -6,15 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/StartScreen.unity
+    path: Assets/Scenes/Start.unity
     guid: 8a044a32c09df4a43b98851f1096dc4f
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Instructions.unity
+    guid: bcbf0383bac4e3940bf56274de50a211
+  - enabled: 1
+    path: Assets/Scenes/Question.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/cakeBuild.unity
+    path: Assets/Scenes/CakeBuild.unity
     guid: 63990a83c2d883648be463b165a0bb1a
   - enabled: 1
-    path: Assets/Scenes/EndScreen.unity
+    path: Assets/Scenes/End.unity
     guid: d730ca38a1fd9fb408aacdee22e47dfd
+  - enabled: 1
+    path: Assets/Scenes/PostGame.unity
+    guid: 676e90bed328c314299f796307d2a63a
   m_configObjects: {}

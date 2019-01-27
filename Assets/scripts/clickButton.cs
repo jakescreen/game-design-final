@@ -13,16 +13,30 @@ public class clickButton : MonoBehaviour
     public Toggle t1, t2, t3, vanilla, chocolate, redVelvet, red, blue, green, purple, white, small, medium, large, circle, rect, star, icing
         , writing, sprinkles, candles;
     public static int ans = 0;
+    public static bool layersCorrect, flavorCorrect, icingCorrect, sizeCorrect, decorCorrect1, decorCorrect2, decorCorrect3, decorCorrect4, shapeCorrect;
 
     public void changeText(string word)
     {
         text.text = word;
     }
 
-    public void changeLevel()
+    public void toQuestion()
     {
-        Application.LoadLevel("SampleScene");
+        Application.LoadLevel("Question");
     }
+	public void toInstructions()
+	{
+		Application.LoadLevel("Instructions");
+	}
+	public void toPostGame()
+	{
+		Application.LoadLevel("PostGame");
+	}
+	public void nextCustomer()
+	{
+		ans = 0;
+		Application.LoadLevel("Question");
+	}
     public void changeToEnd()
     {
         if(t3.isOn == false)
@@ -57,15 +71,16 @@ public class clickButton : MonoBehaviour
         {
             ans += 1;
         }
-        Application.LoadLevel("EndScreen");
+        Application.LoadLevel("End");
     }
-
     public void reset()
     {
-        Application.LoadLevel("StartScreen");
+        ans = 0;
+        Application.LoadLevel("Start");
     }
     public void makeUnclickable(Button but)
     {
         but.interactable = false;
     }
+    
 }
