@@ -21,7 +21,7 @@ public class clickButton : MonoBehaviour
 
     public void changeLevel()
     {
-        Application.LoadLevel("SampleScene");
+        Application.LoadLevel("Question");
     }
     public void changeToEnd()
     {
@@ -57,12 +57,11 @@ public class clickButton : MonoBehaviour
         {
             ans += 1;
         }
-        Application.LoadLevel("EndScreen");
+        Application.LoadLevel("End");
     }
-
     public void reset()
     {
-        Application.LoadLevel("StartScreen");
+        Application.LoadLevel("Start");
     }
     public void makeUnclickable(Button but)
     {

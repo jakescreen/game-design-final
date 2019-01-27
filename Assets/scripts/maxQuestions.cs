@@ -24,7 +24,7 @@ public class maxQuestions : MonoBehaviour
 
         if(num == 5)
         {
-            Application.LoadLevel("cakeBuild");
+            Application.LoadLevel("CakeBuild");
         }
     }
 }
