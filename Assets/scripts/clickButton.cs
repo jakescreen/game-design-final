@@ -28,6 +28,15 @@ public class clickButton : MonoBehaviour
 	{
 		Application.LoadLevel("Instructions");
 	}
+	public void toPostGame()
+	{
+		Application.LoadLevel("PostGame");
+	}
+	public void nextCustomer()
+	{
+		ans = 0;
+		Application.LoadLevel("Question");
+	}
     public void changeToEnd()
     {
         if(t3.isOn == false)
