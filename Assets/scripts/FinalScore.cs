@@ -10,7 +10,8 @@ public class FinalScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        score.text = "total: " + clickButton.ans.ToString() + "/10";
+        //float points = clickButton.ans / 8;
+        score.text = "total: " + clickButton.ans.ToString() + "/8";
     }
 
     // Update is called once per frame

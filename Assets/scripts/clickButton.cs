@@ -62,6 +62,7 @@ public class clickButton : MonoBehaviour
     }
     public void reset()
     {
+        ans = 0;
         Application.LoadLevel("Start");
     }
     public void makeUnclickable(Button but)
