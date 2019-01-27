@@ -522,6 +522,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questions: {fileID: 1588213984}
   text: {fileID: 1645677253}
+  countText: {fileID: 1207503999}
+  questionCount: 0
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0

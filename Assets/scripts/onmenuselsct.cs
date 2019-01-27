@@ -13,12 +13,18 @@ public class onmenuselsct : MonoBehaviour
     public Dropdown questions;
 
     public Text text = null;
+	public Text	countText = null;
+	public int questionCount = 0;
 
 
     public void printAnswers(Dropdown question)
     {
         int val = question.value;
-
+		
+		questionCount++;
+		
+		countText.text = questionCount.ToString();
+		
         text.text = (string) answers[val];
 
         answers.RemoveAt(val);
