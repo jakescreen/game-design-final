@@ -520,19 +520,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bb6ae6b8e7967c43a27a036b0665205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  answers:
-  - My son
-  - As much is needed
-  - About 20 people
-  - blue is my son's favorite color
-  - Whatever most people like
-  - Birthday decorations
-  - A half sheet
-  - I dont care, a generic boy's birthday cake is fine
-  - My sons birthday, he's turning 10
-  - My son hates sprinkles
-  - Its a special birthday, so the bigger the better
-  - I want a fun boys rectangular cake
   questions: {fileID: 1588213984}
   text: {fileID: 1645677253}
 --- !u!114 &519420034

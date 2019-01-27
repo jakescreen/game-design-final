@@ -7,7 +7,6 @@ public class removeDropdown : MonoBehaviour
 {
     // Start is called before the first frame update
     Dropdown drop = null;
-	int testInt = 1;
 
     public void Removed(Dropdown drop)
     {
