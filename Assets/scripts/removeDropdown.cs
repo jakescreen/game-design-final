@@ -12,6 +12,7 @@ public class removeDropdown : MonoBehaviour
     {
         int val = drop.value;
         drop.options.RemoveAt(val);
+        //drop.value = 0;
     }
   
 

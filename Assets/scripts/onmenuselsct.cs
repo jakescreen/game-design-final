@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class onmenuselsct : MonoBehaviour
 {
     
-    public string[] answers = new string[12] {"My son", "As much is needed", "About 20 people", "blue is my son's favorite color",
+    public ArrayList answers = new ArrayList() {"My son", "As much as is needed", "About 20 people", "blue is my son's favorite color",
         "Whatever most people like", "Birthday decorations", "A half sheet", "I dont care, a generic boy's birthday cake is fine",
         "My sons birthday, he's turning 10", "My son hates sprinkles", "Its a special birthday, so the bigger the better", "I want a fun boys rectangular cake"};
 
@@ -19,7 +19,9 @@ public class onmenuselsct : MonoBehaviour
     {
         int val = question.value;
 
-        text.text = answers[val];
+        text.text = (string) answers[val];
+
+        answers.RemoveAt(val);
 
 
     }
