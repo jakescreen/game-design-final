@@ -20,10 +20,14 @@ public class clickButton : MonoBehaviour
         text.text = word;
     }
 
-    public void changeLevel()
+    public void toQuestion()
     {
         Application.LoadLevel("Question");
     }
+	public void toInstructions()
+	{
+		Application.LoadLevel("Instructions");
+	}
     public void changeToEnd()
     {
         if(t3.isOn == false)
