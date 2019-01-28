@@ -8,6 +8,8 @@ public class FinalScore : MonoBehaviour
 {
     public Text score = null;
     public Text flavor = null, color = null, deco = null, size = null, shape = null, Layer = null;
+	public Image background1;
+	public Image background2;
 
     // Start is called before the first frame update
     void Start()
@@ -15,7 +17,17 @@ public class FinalScore : MonoBehaviour
         float points = (((float) clickButton.ans) / 8.0f) * 100.0f;
         System.Console.WriteLine(points);
         score.text = "total: " + points.ToString() + "%";
-
+//       if(onmenuselsct.customer == 1)
+//       {
+//			background1.enabled = true;
+//			background2.enabled = false;
+//       }
+//       if(onmenuselsct.customer == 2)
+//        {
+//			background1.enabled = false;
+//			background2.enabled = true;
+//       }
+		
         onmenuselsct.customer += 1;
         if(onmenuselsct.customer > 2)
         {

@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 using UnityEngine.UI;
 
 public class clickButton : MonoBehaviour
 {
+	
     public int i;
     public Text text = null;
     public Button ruin;
@@ -15,6 +15,17 @@ public class clickButton : MonoBehaviour
     public static int ans = 0;
     public static bool layersCorrect, flavorCorrect, icingCorrect, sizeCorrect, decorCorrect1, decorCorrect2, decorCorrect3, decorCorrect4, shapeCorrect;
 
+	
+	
+//	public Image background;
+//	public Sprite customerSprite1; //Drag your first sprite here in inspector.
+//	public Sprite customerSprite2; //Drag your second sprite here in inspector.
+	 
+//	void Start() //Lets start by getting a reference to our image component.
+//	{
+//	background = GetComponent<Image>(); //Our image component is the one attached to this gameObject.
+//	}	
+	
     public void changeText(string word)
     {
         text.text = word;
@@ -23,6 +34,18 @@ public class clickButton : MonoBehaviour
     public void toQuestion()
     {
         Application.LoadLevel("Question");
+//		if (onmenuselsct.customer == 3) {
+//			background.enabled = true;
+//		} else {
+//			background.enabled = false;
+//		}
+//		background = GetComponent<Image>();
+//		if (onmenuselsct.customer == 1) {
+//			background.sprite = customerSprite1;
+//		} else {
+//			background.sprite = customerSprite2;
+//		}
+		
     }
     public void toInstructions()
     {

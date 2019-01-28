@@ -19,6 +19,9 @@ public class onmenuselsct : MonoBehaviour
 	public Text	countText = null;
 	public int questionCount = 0;
     public static int customer = 1;
+	
+	public Image background1;
+	public Image background2;
 
 
     public void printAnswers(Dropdown question)
@@ -42,15 +45,21 @@ public class onmenuselsct : MonoBehaviour
        if(customer == 1)
         {
             answers = customer1;
+			background1.enabled = true;
+			background2.enabled = false;
         }
        else if(customer == 2)
         {
             answers = customer2;
+			background1.enabled = false;
+			background2.enabled = true;
         }
         else
         {
             answers = customer1;
             customer = 1;
+			background1.enabled = true;
+			background2.enabled = false;
         }
     }
 
