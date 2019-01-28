@@ -416,7 +416,8 @@ MonoBehaviour:
   m_Text: "Welcome to the Bakery Simulator; today you are the baker! Much like with
     a stakeholder, you will need to ask this \u201Ccake-holder\u201D questions to
     determine their desired product. Use their answers to construct a cake based on
-    6 criteria: number of layers, flavor, icing color, size, decorations, and shape."
+    6 criteria: number of layers, flavor, icing color, size, decorations, and shape.
+    You are able toask 6 questions."
 --- !u!222 &709430284
 CanvasRenderer:
   m_ObjectHideFlags: 0
