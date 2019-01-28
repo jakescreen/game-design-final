@@ -14,6 +14,8 @@ public class FinalScore : MonoBehaviour
         float points = (((float) clickButton.ans) / 8.0f) * 100.0f;
         System.Console.WriteLine(points);
         score.text = "total: " + points.ToString() + "%";
+
+        onmenuselsct.customer += 1;
     }
 
     // Update is called once per frame

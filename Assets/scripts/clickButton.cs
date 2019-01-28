@@ -43,35 +43,35 @@ public class clickButton : MonoBehaviour
     }
     public void changeToEnd()
     {
-        if(t3.isOn == false)
+        if(t3.isOn)
         {
             ans += 1;
         }
-        if (vanilla.isOn == false)
+        if (vanilla.isOn)
         {
             ans += 1;
         }
-        if (blue.isOn == false)
+        if (blue.isOn)
         {
             ans += 1;
         }
-        if (medium.isOn == false)
+        if (medium.isOn)
         {
             ans += 1;
         }
-        if (icing.isOn == false)
+        if (icing.isOn)
         {
             ans += 1;
         }
-        if (writing.isOn == false)
+        if (writing.isOn)
         {
             ans += 1;
         }
-        if (candles.isOn == false)
+        if (candles.isOn)
         {
             ans += 1;
         }
-        if (rect.isOn == false)
+        if (rect.isOn)
         {
             ans += 1;
         }

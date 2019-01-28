@@ -22,9 +22,10 @@ public class maxQuestions : MonoBehaviour
     {
         int num = drop.options.Count;
 
-        if(num == 5)
+        if(num == 6)
         {
-            Application.LoadLevel("CakeBuild");
+            drop.interactable = false;
+
         }
     }
 }
