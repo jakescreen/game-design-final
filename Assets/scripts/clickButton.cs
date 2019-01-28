@@ -43,38 +43,69 @@ public class clickButton : MonoBehaviour
     }
     public void changeToEnd()
     {
-        if(t3.isOn)
+        if(onmenuselsct.customer == 2)
         {
-            ans += 1;
+            if (t3.isOn)
+            {
+                ans += 1;
+            }
+            if (vanilla.isOn)
+            {
+                ans += 1;
+            }
+            if (blue.isOn)
+            {
+                ans += 1;
+            }
+            if (medium.isOn)
+            {
+                ans += 1;
+            }
+            if (icing.isOn)
+            {
+                ans += 1;
+            }
+            if (writing.isOn)
+            {
+                ans += 1;
+            }
+            if (candles.isOn)
+            {
+                ans += 1;
+            }
+            if (rect.isOn)
+            {
+                ans += 1;
+            }
         }
-        if (vanilla.isOn)
+        else if(onmenuselsct.customer == 1)
         {
-            ans += 1;
+            if (t2.isOn)
+            {
+                ans += 1;
+            }
+            if (chocolate.isOn)
+            {
+                ans += 1;
+            }
+            if (purple.isOn)
+            {
+                ans += 1;
+            }
+            if (large.isOn)
+            {
+                ans += 1;
+            }
+            if (sprinkles.isOn)
+            {
+                ans += 1;
+            }
+            if (circle.isOn)
+            {
+                ans += 1;
+            }
         }
-        if (blue.isOn)
-        {
-            ans += 1;
-        }
-        if (medium.isOn)
-        {
-            ans += 1;
-        }
-        if (icing.isOn)
-        {
-            ans += 1;
-        }
-        if (writing.isOn)
-        {
-            ans += 1;
-        }
-        if (candles.isOn)
-        {
-            ans += 1;
-        }
-        if (rect.isOn)
-        {
-            ans += 1;
-        }
+        
         Application.LoadLevel("End");
     }
     public void reset()

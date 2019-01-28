@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class onmenuselsct : MonoBehaviour
 {
     public ArrayList answers = null;
-    public ArrayList customer1 = new ArrayList() {"Masga", "As much as is needed", "Aboutasfasf", "bluasfawewaef son's favorite color",
-        "Whatever most people like", "Birthday decorations", "A half sheet", "I dont care, a generic boy's birthday cake is fine",
-        "My sons birthday, he's turning 10", "My son hates sprinkles", "Its a special birthday, so the bigger the better", "I want a fun boys rectangular cake"};
+    public ArrayList customer1 = new ArrayList() {"Me", "I dunno, like 10 dollars?", "A bunch… I think Susan is coming… Or maybe not, I don’t know.", "I really feel like you should know that already.",
+        "Do you have lemon? Amy likes lemon. I think Amy is gonna be there.", "Just make it look nice, okay? But none of that fancy stuff.", "I dunno, pretty big", "What kind of a question is that? Cake shaped?",
+        "Does that really matter?", "You.", "Cakes have layers?", "Whos the cake-maker here? Me or you?"};
     public ArrayList customer2 = new ArrayList() {"My son", "As much as is needed", "About 20 people", "blue is my son's favorite color",
         "Whatever most people like", "Birthday decorations", "A half sheet", "I dont care, a generic boy's birthday cake is fine",
         "My sons birthday, he's turning 10", "My son hates sprinkles", "Its a special birthday, so the bigger the better", "I want a fun boys rectangular cake"};

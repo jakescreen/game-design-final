@@ -1,0 +1,58 @@
+[1mdiff --git a/Assets/scripts/FinalScore.cs b/Assets/scripts/FinalScore.cs[m
+[1mindex 903886c..ada6bbc 100644[m
+[1m--- a/Assets/scripts/FinalScore.cs[m
+[1m+++ b/Assets/scripts/FinalScore.cs[m
+[36m@@ -14,6 +14,8 @@[m [mpublic class FinalScore : MonoBehaviour[m
+         float points = (((float) clickButton.ans) / 8.0f) * 100.0f;[m
+         System.Console.WriteLine(points);[m
+         score.text = "total: " + points.ToString() + "%";[m
+[32m+[m
+[32m+[m[32m        onmenuselsct.customer += 1;[m
+     }[m
+ [m
+     // Update is called once per frame[m
+[1mdiff --git a/Assets/scripts/onmenuselsct.cs b/Assets/scripts/onmenuselsct.cs[m
+[1mindex b6a8c7b..22ddd33 100644[m
+[1m--- a/Assets/scripts/onmenuselsct.cs[m
+[1m+++ b/Assets/scripts/onmenuselsct.cs[m
+[36m@@ -6,15 +6,18 @@[m [musing UnityEngine.UI;[m
+ public class onmenuselsct : MonoBehaviour[m
+ {[m
+     [m
+[31m-    public ArrayList answers = new ArrayList() {"My son", "As much as is needed", "About 20 people", "blue is my son's favorite color",[m
+[32m+[m[32m    public ArrayList answers1 = new ArrayList() {"My son", "As much as is needed", "About 20 people", "blue is my son's favorite color",[m
+         "Whatever most people like", "Birthday decorations", "A half sheet", "I dont care, a generic boy's birthday cake is fine",[m
+         "My sons birthday, he's turning 10", "My son hates sprinkles", "Its a special birthday, so the bigger the better", "I want a fun boys rectangular cake"};[m
+[32m+[m[32m    public ArrayList answers2 = new ArrayList() { "ans 1", "ans 2", "ans 3", "ans 4", "ans 5", "ans 6", "ans 7", "ans 8", "ans 9", "ans 10", "ans 11", "ans 12" };[m
+[32m+[m[32m    public ArrayList answers = null;[m
+ [m
+     public Dropdown questions;[m
+ [m
+     public Text text = null;[m
+ 	public Text	countText = null;[m
+ 	public int questionCount = 0;[m
+[32m+[m[32m    public static int customer = 1;[m
+ [m
+ [m
+     public void printAnswers(Dropdown question)[m
+[36m@@ -35,7 +38,19 @@[m [mpublic class onmenuselsct : MonoBehaviour[m
+     // Start is called before the first frame update[m
+     void Start()[m
+     {[m
+[31m-        [m
+[32m+[m[32m        if (customer == 1)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            answers = answers1;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        else if (customer == 2)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            answers = answers2;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        else[m
+[32m+[m[32m        {[m
+[32m+[m[32m            answers = answers1;[m
+[32m+[m[32m            customer = 1;[m
+[32m+[m[32m        }[m
+     }[m
+ [m
+     // Update is called once per frame[m
