@@ -18,9 +18,12 @@ EditorBuildSettings:
     path: Assets/Scenes/cakeBuild.unity
     guid: 63990a83c2d883648be463b165a0bb1a
   - enabled: 1
-    path: Assets/Scenes/End.unity
+    path: Assets/Scenes/Results.unity
     guid: d730ca38a1fd9fb408aacdee22e47dfd
   - enabled: 1
     path: Assets/Scenes/PostGame.unity
     guid: 676e90bed328c314299f796307d2a63a
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 2cd0c10cb8a50b94e8ced1121d825f55
   m_configObjects: {}

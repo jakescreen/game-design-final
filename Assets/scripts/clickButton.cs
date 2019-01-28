@@ -41,7 +41,11 @@ public class clickButton : MonoBehaviour
     {
         Application.LoadLevel("cakeBuild");
     }
-    public void changeToEnd()
+	public void toEnd()
+	{
+		Application.LoadLevel("End");
+	}
+    public void changeToResults()
     {
         if(onmenuselsct.customer == 2)
         {
@@ -106,7 +110,7 @@ public class clickButton : MonoBehaviour
             }
         }
         
-        Application.LoadLevel("End");
+        Application.LoadLevel("Results");
     }
     public void reset()
     {
