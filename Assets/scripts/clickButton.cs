@@ -52,34 +52,41 @@ public class clickButton : MonoBehaviour
             if (t3.isOn)
             {
                 ans += 1;
+                layersCorrect = true;
             }
             if (vanilla.isOn)
             {
                 ans += 1;
+                flavorCorrect = true;
             }
             if (blue.isOn)
             {
                 ans += 1;
+                icingCorrect = true;
             }
             if (medium.isOn)
             {
                 ans += 1;
+                sizeCorrect = true;
             }
             if (icing.isOn)
             {
-                ans += 1;
+                decorCorrect1 = true;
             }
             if (writing.isOn)
             {
                 ans += 1;
+                decorCorrect2 = true;
             }
             if (candles.isOn)
             {
                 ans += 1;
+                decorCorrect3 = true;
             }
             if (rect.isOn)
             {
                 ans += 1;
+                shapeCorrect = true;
             }
         }
         else if(onmenuselsct.customer == 1)
@@ -87,26 +94,32 @@ public class clickButton : MonoBehaviour
             if (t2.isOn)
             {
                 ans += 1;
+                layersCorrect = true;
             }
             if (chocolate.isOn)
             {
                 ans += 1;
+                flavorCorrect = true;
             }
             if (purple.isOn)
             {
                 ans += 1;
+                icingCorrect = true;
             }
             if (large.isOn)
             {
                 ans += 1;
+                sizeCorrect = true;
             }
             if (sprinkles.isOn)
             {
                 ans += 1;
+                decorCorrect4 = true;
             }
             if (circle.isOn)
             {
                 ans += 1;
+                shapeCorrect = true;
             }
         }
         
@@ -116,6 +129,16 @@ public class clickButton : MonoBehaviour
     {
         ans = 0;
         Application.LoadLevel("Start");
+        onmenuselsct.customer = 1;
+        layersCorrect = false;
+        icingCorrect = false;
+        flavorCorrect = false;
+        shapeCorrect = false;
+        sizeCorrect = false;
+        decorCorrect1 = false;
+        decorCorrect2 = false;
+        decorCorrect3 = false;
+        decorCorrect4 = false;
     }
     public void makeUnclickable(Button but)
     {
