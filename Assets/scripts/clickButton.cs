@@ -16,16 +16,6 @@ public class clickButton : MonoBehaviour
     public static bool layersCorrect, flavorCorrect, icingCorrect, sizeCorrect, decorCorrect1, decorCorrect2, decorCorrect3, decorCorrect4, shapeCorrect;
 
 	
-	
-//	public Image background;
-//	public Sprite customerSprite1; //Drag your first sprite here in inspector.
-//	public Sprite customerSprite2; //Drag your second sprite here in inspector.
-	 
-//	void Start() //Lets start by getting a reference to our image component.
-//	{
-//	background = GetComponent<Image>(); //Our image component is the one attached to this gameObject.
-//	}	
-	
     public void changeText(string word)
     {
         text.text = word;
@@ -34,17 +24,6 @@ public class clickButton : MonoBehaviour
     public void toQuestion()
     {
         Application.LoadLevel("Question");
-//		if (onmenuselsct.customer == 3) {
-//			background.enabled = true;
-//		} else {
-//			background.enabled = false;
-//		}
-//		background = GetComponent<Image>();
-//		if (onmenuselsct.customer == 1) {
-//			background.sprite = customerSprite1;
-//		} else {
-//			background.sprite = customerSprite2;
-//		}
 		
     }
     public void toInstructions()
@@ -70,7 +49,40 @@ public class clickButton : MonoBehaviour
 	}
     public void changeToResults()
     {
-        if(onmenuselsct.customer == 2)
+        if(onmenuselsct.customer == 1)
+        {
+            if (t2.isOn)
+            {
+                ans += 1;
+                layersCorrect = true;
+            }
+            if (chocolate.isOn)
+            {
+                ans += 1;
+                flavorCorrect = true;
+            }
+            if (purple.isOn)
+            {
+                ans += 1;
+                icingCorrect = true;
+            }
+            if (large.isOn)
+            {
+                ans += 1;
+                sizeCorrect = true;
+            }
+            if (sprinkles.isOn)
+            {
+                ans += 1;
+                decorCorrect4 = true;
+            }
+            if (circle.isOn)
+            {
+                ans += 1;
+                shapeCorrect = true;
+            }
+        }
+		else if(onmenuselsct.customer == 2)
         {
             if (t3.isOn)
             {
@@ -112,19 +124,19 @@ public class clickButton : MonoBehaviour
                 shapeCorrect = true;
             }
         }
-        else if(onmenuselsct.customer == 1)
+		else if(onmenuselsct.customer == 3)
         {
-            if (t2.isOn)
+            if (t3.isOn)
             {
                 ans += 1;
                 layersCorrect = true;
             }
-            if (chocolate.isOn)
+            if (redVelvet.isOn)
             {
                 ans += 1;
                 flavorCorrect = true;
             }
-            if (purple.isOn)
+            if (white.isOn)
             {
                 ans += 1;
                 icingCorrect = true;
@@ -134,12 +146,16 @@ public class clickButton : MonoBehaviour
                 ans += 1;
                 sizeCorrect = true;
             }
-            if (sprinkles.isOn)
+            if (icing.isOn)
+            {
+                decorCorrect1 = true;
+            }
+            if (writing.isOn)
             {
                 ans += 1;
-                decorCorrect4 = true;
+                decorCorrect2 = true;
             }
-            if (circle.isOn)
+            if (rect.isOn)
             {
                 ans += 1;
                 shapeCorrect = true;
