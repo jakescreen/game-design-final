@@ -17,17 +17,26 @@ public class FinalScore : MonoBehaviour
     {
         float points = (((float) clickButton.ans) / 8.0f) * 100.0f;
         System.Console.WriteLine(points);
-        score.text = "total: " + points.ToString() + "%";
-		
-        onmenuselsct.customer += 1;
-        if(onmenuselsct.customer > 3)
+        score.text = "total: " + points.ToString() + "%";       
+
+		if(onmenuselsct.customer == 1)
         {
-            onmenuselsct.customer = 1;
+			background1.enabled = true;
+			background2.enabled = false;
+			background3.enabled = false;
         }
-       
-
-        
-
+        else if(onmenuselsct.customer == 2)
+        {
+			background1.enabled = false;
+			background2.enabled = true;
+			background3.enabled = false;
+        }
+		else if(onmenuselsct.customer == 3)
+		{
+			background1.enabled = false;
+			background2.enabled = false;
+			background3.enabled = true;
+		}
     }
 
     // Update is called once per frame

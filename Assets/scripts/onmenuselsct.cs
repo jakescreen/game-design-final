@@ -65,14 +65,6 @@ public class onmenuselsct : MonoBehaviour
 			background2.enabled = false;
 			background3.enabled = true;
 		}
-        else
-        {
-            answers = customer1;
-            customer = 1;
-			background1.enabled = true;
-			background2.enabled = false;
-			background3.enabled = false;
-        }
     }
 
     // Update is called once per frame

@@ -37,6 +37,11 @@ public class clickButton : MonoBehaviour
     public void nextCustomer()
     {
         ans = 0;
+		onmenuselsct.customer += 1;
+        if(onmenuselsct.customer > 3)
+        {
+            onmenuselsct.customer = 1;
+        }
         Application.LoadLevel("Question");
     }
     public void toCakeBake()
