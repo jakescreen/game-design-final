@@ -377,10 +377,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: "How do you think your interaction with the first customer went? Were their
-    answers straightforward, or did the final cake they desired surprise you? Customers
-    aren\u2019t always clear about what they want. Sometimes you need to ask a variety
-    of questions to determine their needs. Let\u2019s try again with another customer!"
+  m_Text: "How do you think your interaction with the customer went? Were their answers
+    straightforward, or did the final cake they desired surprise you? Customers aren\u2019t
+    always clear about what they want. Sometimes you need to ask a variety of questions
+    to determine their needs. Let\u2019s try again with another customer!"
 --- !u!222 &456427575
 CanvasRenderer:
   m_ObjectHideFlags: 0
