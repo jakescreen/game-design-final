@@ -11,8 +11,8 @@ public class removeDropdown : MonoBehaviour
 
     public void Removed(Dropdown drop)
     {
-        int val = drop.value;
-        drop.options.RemoveAt(val);
+        int val = drop.value; //get selected value
+        drop.options.RemoveAt(val); //disable selected value
         //drop.value = 0;
     }
   
