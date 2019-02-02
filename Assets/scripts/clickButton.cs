@@ -12,8 +12,8 @@ public class clickButton : MonoBehaviour
     public Button fix;
     public Toggle t1, t2, t3, vanilla, chocolate, redVelvet, red, blue, green, purple, white, small, medium, large, circle, rect, star, icing
         , writing, sprinkles, candles;
-    public static int ans = 0;
-    public static bool layersCorrect, flavorCorrect, icingCorrect, sizeCorrect, decorCorrect1, decorCorrect2, decorCorrect3, decorCorrect4, shapeCorrect;
+    public static float ans = 0f;
+    public static bool layersCorrect, flavorCorrect, icingCorrect, sizeCorrect, decorCorrect, shapeCorrect;
 
 	
     public void changeText(string word)
@@ -38,14 +38,11 @@ public class clickButton : MonoBehaviour
         flavorCorrect = false;
         shapeCorrect = false;
         sizeCorrect = false;
-        decorCorrect1 = false;
-        decorCorrect2 = false;
-        decorCorrect3 = false;
-        decorCorrect4 = false;
+        decorCorrect = false;
     }
     public void nextCustomer()
     {
-        ans = 0;
+        ans = 0f;
 		onmenuselsct.customer += 1;
         if(onmenuselsct.customer > 3)
         {
@@ -85,10 +82,10 @@ public class clickButton : MonoBehaviour
                 ans += 1;
                 sizeCorrect = true;
             }
-            if (sprinkles.isOn)
+            if (!icing.isOn && !candles.isOn && !writing.isOn && sprinkles.isOn)
             {
                 ans += 1;
-                decorCorrect4 = true;
+                decorCorrect = true;
             }
             if (circle.isOn)
             {
@@ -118,19 +115,10 @@ public class clickButton : MonoBehaviour
                 ans += 1;
                 sizeCorrect = true;
             }
-            if (icing.isOn)
-            {
-                decorCorrect1 = true;
-            }
-            if (writing.isOn)
+            if (icing.isOn && candles.isOn && writing.isOn && !sprinkles.isOn)
             {
                 ans += 1;
-                decorCorrect2 = true;
-            }
-            if (candles.isOn)
-            {
-                ans += 1;
-                decorCorrect3 = true;
+                decorCorrect = true;
             }
             if (rect.isOn)
             {
@@ -160,14 +148,10 @@ public class clickButton : MonoBehaviour
                 ans += 1;
                 sizeCorrect = true;
             }
-            if (icing.isOn)
-            {
-                decorCorrect1 = true;
-            }
-            if (writing.isOn)
+            if (icing.isOn && !candles.isOn && writing.isOn && !sprinkles.isOn)
             {
                 ans += 1;
-                decorCorrect2 = true;
+                decorCorrect = true;
             }
             if (rect.isOn)
             {
@@ -180,7 +164,7 @@ public class clickButton : MonoBehaviour
     }
     public void reset()
     {
-        ans = 0;
+        ans = 0f;
         Application.LoadLevel("Start");
         onmenuselsct.customer = 1;
         layersCorrect = false;
@@ -188,10 +172,7 @@ public class clickButton : MonoBehaviour
         flavorCorrect = false;
         shapeCorrect = false;
         sizeCorrect = false;
-        decorCorrect1 = false;
-        decorCorrect2 = false;
-        decorCorrect3 = false;
-        decorCorrect4 = false;
+        decorCorrect = false;
     }
     public void makeUnclickable(Button but)
     {

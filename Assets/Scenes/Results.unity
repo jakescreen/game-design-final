@@ -363,7 +363,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'total: -%'
+  m_Text: 'total: - / 6'
 --- !u!222 &134335143
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -505,7 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c04573de2a290a44aa4d36ac47a8570, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
+  score: {fileID: 134335142}
   flavor: {fileID: 1747826468}
   color: {fileID: 1479445379}
   deco: {fileID: 841859527}
@@ -1159,8 +1159,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 327, y: -96.399994}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 372.7, y: -96.399994}
+  m_SizeDelta: {x: 251.4, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &841859527
 MonoBehaviour:

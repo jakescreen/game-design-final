@@ -15,9 +15,8 @@ public class FinalScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        float points = (((float) clickButton.ans) / 8.0f) * 100.0f;
-        System.Console.WriteLine(points);
-        score.text = "total: " + points.ToString() + "%";       
+        float points = (float) clickButton.ans;
+        score.text = "Total: " + points.ToString() + " / 6";       
     }
 
     // Update is called once per frame
@@ -41,7 +40,6 @@ public class FinalScore : MonoBehaviour
 			background2.enabled = false;
 			background3.enabled = true;
 		}
-        // this is jank
         if (onmenuselsct.customer == 1)
 		{
         
@@ -87,7 +85,7 @@ public class FinalScore : MonoBehaviour
         {
             color.color = Color.red;
         }
-        if (clickButton.decorCorrect4)
+        if (clickButton.decorCorrect)
         {
             deco.color = Color.green;
         }
