@@ -5,6 +5,6 @@ Creators are Sophia Freaney, Peter Jenny, Kelly Mi, and Jake Screen
 -------------------
 After playing our interactive, the user should:
 
-Infer that dealing with customers as a developer can be difficult and frustrating.
+Infer that dealing with customers as a developer can involve working with customers with different levels of knowledge and helpfulness.
 
 Solve this problem by asking varied questions to better assess customer wants and needs
