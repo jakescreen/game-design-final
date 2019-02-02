@@ -120,14 +120,15 @@ public class clickButton : MonoBehaviour
             }
             if (icing.isOn)
             {
+				ans += 1;
                 decorCorrect1 = true;
             }
-            if (writing.isOn)
+            if (candles.isOn)
             {
                 ans += 1;
                 decorCorrect2 = true;
             }
-            if (candles.isOn)
+            if (writing.isOn)
             {
                 ans += 1;
                 decorCorrect3 = true;
@@ -162,12 +163,13 @@ public class clickButton : MonoBehaviour
             }
             if (icing.isOn)
             {
+				ans += 1;
                 decorCorrect1 = true;
             }
             if (writing.isOn)
             {
                 ans += 1;
-                decorCorrect2 = true;
+                decorCorrect3 = true;
             }
             if (rect.isOn)
             {
