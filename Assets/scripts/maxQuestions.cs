@@ -20,9 +20,9 @@ public class maxQuestions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int num = drop.options.Count;
+        int num = drop.options.Count; //find how many questions have been asked
 
-        if(num == 6)
+        if(num == 6) //total of 12 questions - if 6 remaining, disable dropdown
         {
             drop.interactable = false;
 
