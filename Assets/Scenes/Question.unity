@@ -1690,23 +1690,23 @@ MonoBehaviour:
     m_Options:
     - m_Text: Who is it for?
       m_Image: {fileID: 0}
-    - m_Text: What is your budget
+    - m_Text: What is your budget?
       m_Image: {fileID: 0}
-    - m_Text: How may people is it for?
+    - m_Text: How many people is it for?
       m_Image: {fileID: 0}
     - m_Text: What icing color would you like?
       m_Image: {fileID: 0}
-    - m_Text: What shoud the flavor be?
+    - m_Text: What should the flavor be?
       m_Image: {fileID: 0}
-    - m_Text: What decorations should it have?
+    - m_Text: What decorations would you like?
       m_Image: {fileID: 0}
-    - m_Text: What size should you be?
+    - m_Text: What size should it be?
       m_Image: {fileID: 0}
     - m_Text: What shape would you like?
       m_Image: {fileID: 0}
-    - m_Text: What is the event?
+    - m_Text: What event is it for?
       m_Image: {fileID: 0}
-    - m_Text: Anything would you like to avoid?
+    - m_Text: Anything you would like to avoid?
       m_Image: {fileID: 0}
     - m_Text: How many layers should it be?
       m_Image: {fileID: 0}
