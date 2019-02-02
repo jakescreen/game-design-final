@@ -33,6 +33,15 @@ public class clickButton : MonoBehaviour
     public void toPostGame()
     {
         Application.LoadLevel("PostGame");
+		layersCorrect = false;
+        icingCorrect = false;
+        flavorCorrect = false;
+        shapeCorrect = false;
+        sizeCorrect = false;
+        decorCorrect1 = false;
+        decorCorrect2 = false;
+        decorCorrect3 = false;
+        decorCorrect4 = false;
     }
     public void nextCustomer()
     {

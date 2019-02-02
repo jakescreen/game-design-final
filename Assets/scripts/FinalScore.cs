@@ -18,7 +18,11 @@ public class FinalScore : MonoBehaviour
         float points = (((float) clickButton.ans) / 8.0f) * 100.0f;
         System.Console.WriteLine(points);
         score.text = "total: " + points.ToString() + "%";       
+    }
 
+    // Update is called once per frame
+    void Update()
+    {
 		if(onmenuselsct.customer == 1)
         {
 			background1.enabled = true;
@@ -37,29 +41,25 @@ public class FinalScore : MonoBehaviour
 			background2.enabled = false;
 			background3.enabled = true;
 		}
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         // this is jank
         if (onmenuselsct.customer == 1)
-        {
-            Layer.text = "3";
-            flavor.text = "Vanilla";
-            color.text = "Blue";
-            deco.text = "Decorative Icing, Candles, Writing";
-            size.text = "Medium";
-            shape.text = "Rectangle";
-        }
-		else if (onmenuselsct.customer == 2)
-        {
-            Layer.text = "2";
+		{
+        
+		    Layer.text = "2";
             flavor.text = "Chocolate";
             color.text = "Purple";
             deco.text = "Sprinkles";
             size.text = "Large";
             shape.text = "Circle";
+        }
+		else if (onmenuselsct.customer == 2)
+        {
+			Layer.text = "3";
+            flavor.text = "Vanilla";
+            color.text = "Blue";
+            deco.text = "Decorative Icing, Candles, Writing";
+            size.text = "Medium";
+            shape.text = "Rectangle";
         } else if (onmenuselsct.customer == 3)
 		{
 			Layer.text = "3";
