@@ -5,14 +5,22 @@ using UnityEngine.UI;
 
 public class clickButton : MonoBehaviour
 {
-	
+	//We are not sure what this variable does, but if we remove it, then everything breaks
+	//DON'T REMOVE
     public int i;
+	
+	
     public Text text = null;
+	
+	//Not sure what these do, but you probably shouldn't delete them either, just sayin'
     public Button ruin;
     public Button fix;
+	
     public Toggle t1, t2, t3, vanilla, chocolate, redVelvet, red, blue, green, purple, white, small, medium, large, circle, rect, star, icing
         , writing, sprinkles, candles;
     public static float ans = 0f;
+	
+	//Used for scoring
     public static bool layersCorrect, flavorCorrect, icingCorrect, sizeCorrect, decorCorrect, shapeCorrect;
 
 	
@@ -30,6 +38,7 @@ public class clickButton : MonoBehaviour
     {
         Application.LoadLevel("Instructions");
     }
+	//resets boolean values for answer displays
     public void toPostGame()
     {
         Application.LoadLevel("PostGame");
@@ -58,6 +67,9 @@ public class clickButton : MonoBehaviour
 	{
 		Application.LoadLevel("End");
 	}
+	
+	//Adds up answer based on everything being correct
+	//Varies base don customer
     public void changeToResults()
     {
         if(onmenuselsct.customer == 1)
@@ -162,6 +174,7 @@ public class clickButton : MonoBehaviour
         
         Application.LoadLevel("Results");
     }
+	//Resets to start
     public void reset()
     {
         ans = 0f;
@@ -174,6 +187,7 @@ public class clickButton : MonoBehaviour
         sizeCorrect = false;
         decorCorrect = false;
     }
+	//Used after toggle is pressed
     public void makeUnclickable(Button but)
     {
         but.interactable = false;

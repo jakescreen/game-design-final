@@ -13,6 +13,7 @@ public class FinalScore : MonoBehaviour
 	public Image background3;
 
     // Start is called before the first frame update
+	// Prints score as a fraction
     void Start()
     {
         float points = (float) clickButton.ans;
@@ -40,6 +41,8 @@ public class FinalScore : MonoBehaviour
 			background2.enabled = false;
 			background3.enabled = true;
 		}
+		
+		//The following if statements display the text for the correct answers
         if (onmenuselsct.customer == 1)
 		{
         
@@ -68,7 +71,8 @@ public class FinalScore : MonoBehaviour
             shape.text = "Rectangle";
 		}
 
-
+		
+		//Changes color of desired option based on user input from cakeBuild screen
         if (clickButton.layersCorrect)
         {
             Layer.color = Color.green;

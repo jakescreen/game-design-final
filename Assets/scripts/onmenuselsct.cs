@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class onmenuselsct : MonoBehaviour
 {
     public ArrayList answers = null;
+	
+	//List answers for each customer
     public ArrayList customer1 = new ArrayList() {"Me", "I don't know, like 30 dollars?", "A bunch… I think Susan is coming… Or maybe not, I don’t know.", "Purple or green.",
         "Do you have lemon? Amy likes lemon. I think Amy is gonna be there.", "Just make it look nice, okay? But none of that fancy stuff.", "Medium, maybe.", "What kind of a question is that? Cake shaped?",
         "Does that really matter?", "You.", "Cakes have layers?", "Who's the cake-maker here? Me or you?"};
@@ -25,7 +27,7 @@ public class onmenuselsct : MonoBehaviour
 	public Image background2;
 	public Image background3;
 
-
+	//Detects which question was picked and prints answers at top of screen
     public void printAnswers(Dropdown question)
     {
         int val = question.value;
@@ -36,7 +38,7 @@ public class onmenuselsct : MonoBehaviour
 		
         text.text = (string) answers[val];
 
-        answers.RemoveAt(val);
+        answers.RemoveAt(val); //Removes answer from ArrayList
 
 
     }
